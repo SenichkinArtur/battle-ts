@@ -36,7 +36,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// import fs from 'fs';
 var fs = require('fs');
 var battle_1 = require("./core/battle");
 var Application = /** @class */ (function () {
@@ -44,10 +43,10 @@ var Application = /** @class */ (function () {
     }
     Application.prototype.init = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var json, battle;
+            var data, battle;
             return __generator(this, function (_a) {
-                json = JSON.parse(fs.readFileSync('../data/data.json'));
-                battle = new battle_1.Battle(json.armies);
+                data = JSON.parse(fs.readFileSync('./data/data.json'));
+                battle = new battle_1.Battle(data.armies);
                 battle.start();
                 return [2 /*return*/];
             });

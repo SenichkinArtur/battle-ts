@@ -41,6 +41,7 @@ var main = function () { return __awaiter(void 0, void 0, void 0, function () {
     var app;
     return __generator(this, function (_a) {
         app = new main_1.Application();
+        console.log('app: ', app);
         app.init();
         return [2 /*return*/];
     });
