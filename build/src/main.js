@@ -45,7 +45,7 @@ var Application = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var data, battle;
             return __generator(this, function (_a) {
-                data = JSON.parse(fs.readFileSync('./data/data.json'));
+                data = JSON.parse(fs.readFileSync('../data/data.json'));
                 battle = new battle_1.Battle(data.armies);
                 battle.start();
                 return [2 /*return*/];
