@@ -16,6 +16,6 @@ export class Battle implements iBattle {
 
   start() {
     this.initializedArmies = this.armies.map(army => ArmyFactory.create(army));
-    console.log('armies: ', this.initializedArmies);
+    // console.log('armies: ', this.initializedArmies);
   }
 }

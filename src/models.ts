@@ -5,8 +5,8 @@
 // }
 
 export enum UnitType {
-  Vehicle = 'vehicle',
-  Soldier = 'soldier',
+  Vehicles = 'vehicles',
+  Soldiers = 'soldiers',
 }
 
 export interface ArmyInterface {
